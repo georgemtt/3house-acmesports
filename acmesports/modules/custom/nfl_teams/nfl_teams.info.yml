@@ -1,0 +1,5 @@
+name: 'NFL Teams'
+type: module
+description: 'A module that pulls NFL team data from an external API and displays it on the ACME Sports site.'
+core_version_requirement: ^8.9 || ^9
+package: 'Custom'

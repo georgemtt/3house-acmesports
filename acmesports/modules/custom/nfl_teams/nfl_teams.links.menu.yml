@@ -1,0 +1,6 @@
+nfl_teams.admin_settings_form:
+  title: 'NFL Teams Configuration'
+  route_name: nfl_teams.admin_settings_form
+  description: 'NFL Teams admin'
+  parent: system.admin_config_system
+  weight: 99

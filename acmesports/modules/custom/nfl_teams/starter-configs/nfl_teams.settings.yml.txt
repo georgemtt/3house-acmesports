@@ -1,0 +1,5 @@
+base_uri: 'http://delivery.chalk247.com'
+endpoint: team_list/NFL.JSON
+api_key: 74db8efa2a6db279393b433d97c2bc843f8e32b0
+test_endpoint: team_list/NFL.JSON
+outage_msg: 'Unable to Access ACME Sports API currently. Please try again later.'

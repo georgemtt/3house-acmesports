@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Contains nfl_teams.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nfl_teams_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+            // Main module help for the nfl_teams module.
+            
+        case 'help.page.nfl_teams':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('A module that pulls NFL team data from an external API and displays it on the ACME Sports site.') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nfl_teams_theme()
+{
+    return ['nfl_teams' => ['render element' => 'children', ], ];
+}

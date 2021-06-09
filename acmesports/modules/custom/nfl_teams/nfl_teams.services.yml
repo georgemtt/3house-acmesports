@@ -1,0 +1,5 @@
+services:
+  nfl_teams_client:
+    class: Drupal\nfl_teams\NflTeamsClient
+    arguments:
+      - '@http_client_factory'

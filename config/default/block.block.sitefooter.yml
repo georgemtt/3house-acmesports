@@ -1,0 +1,25 @@
+uuid: 62e03e02-cad0-4ac4-aac9-0e5565cef127
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:896a1b3c-03d0-46eb-a86a-4337696232ad'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: sitefooter
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:896a1b3c-03d0-46eb-a86a-4337696232ad'
+settings:
+  id: 'block_content:896a1b3c-03d0-46eb-a86a-4337696232ad'
+  label: 'Site Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

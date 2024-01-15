@@ -16,7 +16,8 @@ Data persistence on Drupal is minimized and is very much dependent on APIs. My a
 ### Variety / Options
 
 If this were a real life client, chances are they would love to see differnet implmentations of how the data is handle and displayed on the site. So, I've created to different pages: 
-	- Active NFL Teams (Representation/option 1): /nfl/teams
+	
+ 	- Active NFL Teams (Representation/option 1): /nfl/teams
 	- ACME Sports NFL Team Form (Representation/option 2): nfl/teams/form
 
 ### Easy for generic Site builders (Accesible settings on the UI)
@@ -35,9 +36,10 @@ A future todo can be to look in to implementing a Varnish cache layer.
 
 ### Fail-Over strategy (Exception Handling)
 
-What happens when the API service is down or not available? Display outage message to users. As a test, you can simply disable the internet connection and access the created pages: 
-	- 	The ACME Sports NFL Team Form page by design has no cache implemeneted for the view created. Since it's not cached, it will the display outage message right away.
-	- 	The Active NFL Team page by design has a 1 hour cache implemented for the views created. Since it's cacheable,  the display outage message may not display right away, thus the API data pulled may remain. 
+What happens when the API service is down or not available? Display outage message to users. As a test, you can simply disable the internet connection and access the created pages:
+
+	- The ACME Sports NFL Team Form page by design has no cache implemeneted for the view created. Since it's not cached, it will the display outage message right away.
+	- The Active NFL Team page by design has a 1 hour cache implemented for the views created. Since it's cacheable,  the display outage message may not display right away, thus the API data pulled may remain. 
 
 ### Site UI, UX and Look & Feel
 
@@ -54,7 +56,8 @@ What happens when the API service is down or not available? Display outage messa
 ### Custom module : Create a Views Query Plugin and a Service using HTTP Client / Guzzle. (My solution)
 
 I went with this apporach for the following reasons:
-	- Extensive level of control over what data is consumed, and how it's handled.
+	
+ 	- Extensive level of control over what data is consumed, and how it's handled.
 	- Views can be used to build a UI for displaying and filtering the data.
 	- Displays built with Views integrate well with Drupal's Layout Builder and Blocks systems.
 	- Data is not persisted in Drupal and is queried fresh for each page view.
